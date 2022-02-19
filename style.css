@@ -25,15 +25,16 @@ body {
     --purple: rgba(188, 156, 255, 1);
     --green: rgba(111, 207, 151, 1);
     --gradientFirst: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
-    --gradientSecond: linear-gradient(180deg,rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
+    --gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 234, 1));
 }
-.btn-praim{
+
+.btn-praim {
     position: relative;
     display: block;
     width: 320px;
     height: 44px;
     color: white;
-    background:var(--gradientFirst);
+    background: var(--gradientFirst);
     border-radius: 22px;
     text-align: center;
     padding: 14px 0;
@@ -42,9 +43,37 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
-.arrow-btn{
+
+.btn-circl {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: white;
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-circl.blue {
+    background: var(--gradientFirst);
+
+}
+
+.btn-circl.green {
+    background: var(--gradientSecond);
+}
+
+.arrow{
+    width: 25px;
+    padding-top: 3px;
+
+}
+.arrow-btn {
     position: absolute;
-    top:5px;
+    top: 5px;
     left: 280px;
     width: 32px;
 }
