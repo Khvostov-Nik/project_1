@@ -16,55 +16,60 @@ body {
     line-height: 24px;
 }
 
-:root {
-    --darkShade100: rgba(31, 32, 65, 1);
-    --darkShade75: rgba(31, 32, 65, .75);
-    --darkShade50: rgba(31, 32, 65, .5);
-    --darkShade25: rgba(31, 32, 65, .25);
-    --darkShade05: rgba(31, 32, 65, .05);
-    --purple: rgba(188, 156, 255, 1);
-    --green: rgba(111, 207, 151, 1);
-    --gradientFirst: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
-    --gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 234, 1));
-}
+
+    $darkShade100: rgba(31, 32, 65, 1);
+    $darkShade75: rgba(31, 32, 65, .75);
+    $darkShade50: rgba(31, 32, 65, .5);
+    $darkShade25: rgba(31, 32, 65, .25);
+    $darkShade05: rgba(31, 32, 65, .05);
+    $purple: rgba(188, 156, 255, 1);
+    $green: rgba(111, 207, 151, 1);
+    $gradientFirst: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
+    $gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 234, 1));
 
 
-.btn__praim-large {
-    position: relative;
-    display: inline-block;
-    width: 320px;
-    height: 44px;
-    color: white;
-    background: var(--gradientFirst);
-    text-transform: uppercase;
-    border-radius: 22px;
-    text-align: center;
-    padding: 14px 0;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    text-decoration: none;
-}
-.btn__praim-small{
-    display: block;
-    width: 99px;
-    height: 44px;
-    color: white;
-    background: var(--gradientFirst);
-    text-transform: uppercase;
-    border-radius: 22px;
-    text-align: center;
-    padding: 14px 0;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    text-decoration: none;
-}
-.btn__praim-small.disabled{
-    opacity: .5;
-}
+
+.btn__praim{
+    &-large{
+        position: relative;
+        display: inline-block;
+        width: 320px;
+        height: 44px;
+        color: white;
+        background: $gradientFirst;
+        text-transform: uppercase;
+        border-radius: 22px;
+        text-align: center;
+        padding: 14px 0;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+};
+    &-small{
+        display: block;
+        width: 99px;
+        height: 44px;
+        color: white;
+        background: $gradientFirst;
+        text-transform: uppercase;
+        border-radius: 22px;
+        text-align: center;
+        padding: 14px 0;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+    };
+
+        &-small.disabled{
+            opacity: .5;
+        };
+    }
+
+
 .btn__circl {
     display: block;
     width: 40px;
@@ -80,12 +85,12 @@ body {
 }
 
 .btn__circl.blue {
-    background: var(--gradientFirst);
+    background: $gradientFirst;
 
 }
 
 .btn__circl.green {
-    background: var(--gradientSecond);
+    background: $gradientSecond;
 }
 
 .arrow{

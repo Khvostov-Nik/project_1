@@ -25,25 +25,14 @@ body {
   line-height: 24px;
 }
 
-:root {
-  --darkShade100: rgba(31, 32, 65, 1);
-  --darkShade75: rgba(31, 32, 65, .75);
-  --darkShade50: rgba(31, 32, 65, .5);
-  --darkShade25: rgba(31, 32, 65, .25);
-  --darkShade05: rgba(31, 32, 65, .05);
-  --purple: rgba(188, 156, 255, 1);
-  --green: rgba(111, 207, 151, 1);
-  --gradientFirst: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
-  --gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 234, 1));
-}
-
 .btn__praim-large {
   position: relative;
   display: inline-block;
   width: 320px;
   height: 44px;
   color: white;
-  background: var(--gradientFirst);
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   text-transform: uppercase;
   border-radius: 22px;
   text-align: center;
@@ -60,7 +49,8 @@ body {
   width: 99px;
   height: 44px;
   color: white;
-  background: var(--gradientFirst);
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
   text-transform: uppercase;
   border-radius: 22px;
   text-align: center;
@@ -91,11 +81,13 @@ body {
 }
 
 .btn__circl.blue {
-  background: var(--gradientFirst);
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
 }
 
 .btn__circl.green {
-  background: var(--gradientSecond);
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
+  background: linear-gradient(180deg, #6fcf97, #66d2ea);
 }
 
 .arrow {
@@ -112,5 +104,5 @@ body {
 /*# sourceMappingURL=style.css.map */
     </style>
   </head>
-  <body> <a class="btn__praim-large">fffff</a></body>
+  <body> <a class="btn__praim-small">fffff</a></body>
 </html>
