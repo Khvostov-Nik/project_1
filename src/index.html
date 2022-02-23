@@ -5,104 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       *,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0 calc(20px - (100vw - 100%)) 0 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Montserrat', sans-serif;
-  color: #1f2041;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.btn__praim-large {
-  position: relative;
-  display: inline-block;
-  width: 320px;
-  height: 44px;
-  color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
-  text-transform: uppercase;
-  border-radius: 22px;
-  text-align: center;
-  padding: 14px 0;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn__praim-small {
-  display: block;
-  width: 99px;
-  height: 44px;
-  color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
-  text-transform: uppercase;
-  border-radius: 22px;
-  text-align: center;
-  padding: 14px 0;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn__praim-small.disabled {
-  opacity: .5;
-}
-
-.btn__circl {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  text-transform: uppercase;
-  color: white;
-  border: none;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.btn__circl.blue {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
-}
-
-.btn__circl.green {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
-  background: linear-gradient(180deg, #6fcf97, #66d2ea);
-}
-
-.arrow {
-  width: 25px;
-  padding-top: 3px;
-}
-
-.arrow__btn {
-  position: absolute;
-  top: 5px;
-  left: 280px;
-  width: 32px;
-}
-/*# sourceMappingURL=style.css.map */
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body> <a class="btn__praim-small">ffff</a></body>
+  <body> <a class="btn__praim-large">ffff<img class="arrow arrow__btn" src="img/arrow.svg"></a><a class="btn__praim-small">ffff</a>
+    <button class="btn__circl blue">1</button>
+    <button class="btn__circl green">2</button>
+  </body>
 </html>

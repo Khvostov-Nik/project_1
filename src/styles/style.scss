@@ -16,21 +16,20 @@ body {
     line-height: 24px;
 }
 
-
-    $darkShade100: rgba(31, 32, 65, 1);
-    $darkShade75: rgba(31, 32, 65, .75);
-    $darkShade50: rgba(31, 32, 65, .5);
-    $darkShade25: rgba(31, 32, 65, .25);
-    $darkShade05: rgba(31, 32, 65, .05);
-    $purple: rgba(188, 156, 255, 1);
-    $green: rgba(111, 207, 151, 1);
-    $gradientFirst: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
-    $gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 234, 1));
-
+$darkShade100: rgba(31, 32, 65, 1);
+$darkShade75: rgba(31, 32, 65, .75);
+$darkShade50: rgba(31, 32, 65, .5);
+$darkShade25: rgba(31, 32, 65, .25);
+$darkShade05: rgba(31, 32, 65, .05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$gradientFirst: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
+$gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 234, 1));
 
 
-.btn__praim{
-    &-large{
+
+.btn__praim {
+    &-large {
         position: relative;
         display: inline-block;
         width: 320px;
@@ -46,8 +45,9 @@ body {
         font-weight: 700;
         cursor: pointer;
         text-decoration: none;
-};
-    &-small{
+    }
+
+    &-small {
         display: block;
         width: 99px;
         height: 44px;
@@ -62,12 +62,12 @@ body {
         font-weight: 700;
         cursor: pointer;
         text-decoration: none;
-    };
-
-        &-small.disabled{
-            opacity: .5;
-        };
     }
+
+    &-small.disabled {
+        opacity: .5;
+    }
+}
 
 
 .btn__circl {
@@ -82,22 +82,24 @@ body {
     line-height: 15px;
     font-weight: 700;
     cursor: pointer;
+
+    &.blue {
+        background: $gradientFirst;
+    }
+
+    &.green {
+        background: $gradientSecond;
+    }
+
 }
 
-.btn__circl.blue {
-    background: $gradientFirst;
 
-}
-
-.btn__circl.green {
-    background: $gradientSecond;
-}
-
-.arrow{
+.arrow {
     width: 25px;
     padding-top: 3px;
 
 }
+
 .arrow__btn {
     position: absolute;
     top: 5px;
