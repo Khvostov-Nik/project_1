@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 calc(20px - (100vw - 100%)) 0 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  color: #1f2041;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+:root {
+  --darkShade100: rgba(31, 32, 65, 1);
+  --darkShade75: rgba(31, 32, 65, .75);
+  --darkShade50: rgba(31, 32, 65, .5);
+  --darkShade25: rgba(31, 32, 65, .25);
+  --darkShade05: rgba(31, 32, 65, .05);
+  --purple: rgba(188, 156, 255, 1);
+  --green: rgba(111, 207, 151, 1);
+  --gradientFirst: linear-gradient(180deg, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
+  --gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 234, 1));
+}
+
+.btn__praim-large {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  height: 44px;
+  color: white;
+  background: var(--gradientFirst);
+  text-transform: uppercase;
+  border-radius: 22px;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn__praim-small {
+  display: block;
+  width: 99px;
+  height: 44px;
+  color: white;
+  background: var(--gradientFirst);
+  text-transform: uppercase;
+  border-radius: 22px;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn__praim-small.disabled {
+  opacity: .5;
+}
+
+.btn__circl {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn__circl.blue {
+  background: var(--gradientFirst);
+}
+
+.btn__circl.green {
+  background: var(--gradientSecond);
+}
+
+.arrow {
+  width: 25px;
+  padding-top: 3px;
+}
+
+.arrow__btn {
+  position: absolute;
+  top: 5px;
+  left: 280px;
+  width: 32px;
+}
+/*# sourceMappingURL=style.css.map */
