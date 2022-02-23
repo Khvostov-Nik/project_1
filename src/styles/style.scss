@@ -97,12 +97,10 @@ $gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 
 .arrow {
     width: 25px;
     padding-top: 3px;
-
-}
-
-.arrow__btn {
-    position: absolute;
-    top: 5px;
-    left: 280px;
-    width: 32px;
+    &__btn {
+        position: absolute;
+        top: 5px;
+        left: 280px;
+        width: 32px;
+    }
 }
