@@ -15,6 +15,10 @@ body {
     font-weight: 400;
     line-height: 24px;
 
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
     a:active,
     a:focus {
         outline: none;
@@ -45,15 +49,17 @@ body {
     textarea {
         resize: horizontal;
     }
-    ul{
+
+    ul {
         margin: 0;
     }
+
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6{
+    h6 {
         margin: 0;
     }
 }
@@ -224,10 +230,13 @@ $gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 
 
 .footer {
     display: flex;
+    height: 372px;
     justify-content: space-between;
-    &__titel{
+
+    &__titel {
         margin-bottom: 20px;
     }
+
     &__logo-text {
         color: $darkShade75;
         max-width: 260px;
@@ -241,7 +250,7 @@ $gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 
     &__nav-link {
         text-decoration: none;
         color: $darkShade50;
-        
+
     }
 
     .footer__subscript {
@@ -273,5 +282,26 @@ $gradientSecond: linear-gradient(180deg, rgba(111, 207, 151, 1), rgba(102, 210, 
             color: $darkShade75;
             max-width: 260px;
         }
+    }
+}
+
+.footer__socielcopy {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.copyright {
+    color: $darkShade75;
+}
+
+.social {
+    &__link {
+        height: 24px;
+    }
+    &__link+&__link {
+        margin-left: 24px;
+        height: 24px;
     }
 }

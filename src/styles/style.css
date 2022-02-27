@@ -17,6 +17,11 @@ body {
   line-height: 24px;
 }
 
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body a:active,
 body a:focus {
   outline: none;
@@ -226,6 +231,7 @@ body h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 372px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -288,5 +294,31 @@ body h6 {
 .footer .footer__subscript-text {
   color: rgba(31, 32, 65, 0.75);
   max-width: 260px;
+}
+
+.footer__socielcopy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.social__link {
+  height: 24px;
+}
+
+.social__link + .social__link {
+  margin-left: 24px;
+  height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
