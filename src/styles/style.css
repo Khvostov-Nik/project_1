@@ -17,6 +17,50 @@ body {
   line-height: 24px;
 }
 
+body a:active,
+body a:focus {
+  outline: none;
+}
+
+body input,
+body textarea {
+  outline: none;
+}
+
+body input:active,
+body textarea:active {
+  outline: none;
+}
+
+body :focus {
+  outline: none;
+}
+
+body textarea {
+  resize: none;
+}
+
+body textarea {
+  resize: vertical;
+}
+
+body textarea {
+  resize: horizontal;
+}
+
+body ul {
+  margin: 0;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin: 0;
+}
+
 .container {
   width: 1180px;
   margin: 0 auto;
@@ -53,6 +97,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: 25px;
+  margin-top: 13px;
 }
 
 .menu .item {
@@ -175,5 +220,73 @@ body {
   top: 5px;
   left: 280px;
   width: 32px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__titel {
+  margin-bottom: 20px;
+}
+
+.footer__logo-text {
+  color: rgba(31, 32, 65, 0.75);
+  max-width: 260px;
+}
+
+.footer__nav-item {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.footer__nav-link {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.footer .footer__subscript .input {
+  position: absolute;
+}
+
+.footer .footer__subscript-input {
+  height: 44px;
+  width: 260px;
+  padding: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.footer .footer__subscript-input::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.footer .footer__subscript-input:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.footer .footer__subscript-input::-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.footer .footer__subscript-input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.footer .footer__subscript .arrow-input {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 235px;
+}
+
+.footer .footer__subscript-text {
+  color: rgba(31, 32, 65, 0.75);
+  max-width: 260px;
 }
 /*# sourceMappingURL=style.css.map */
