@@ -293,7 +293,7 @@ body {
 .footer__line {
   width: 100vw;
   height: 1px;
-  background-color: rgba(31, 32, 65, 0.75);
+  background-color: rgba(31, 32, 65, 0.25);
 }
 
 .footer__subscript-text {
@@ -309,10 +309,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 30px;
+  height: 50px;
 }
 
 .copyright {

@@ -199,7 +199,7 @@
 .footer__line{
     width: 100vw;
     height: 1px;
-    background-color: $darkShade75;
+    background-color: $darkShade25;
     
 }
 .footer__subscript {
@@ -213,12 +213,9 @@
 .footer__socielcopy {
     display: flex;
     justify-content: space-between;
-    height: 70px;
-    align-items: center;
+    padding-top: 30px;
+    height: 50px;
 }
-
-
- 
 
 .copyright {
     color: $darkShade75;
