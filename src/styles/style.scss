@@ -167,16 +167,22 @@
         height: 372px;
         justify-content: space-between;
         padding-top: 105px;
+       
     }
 
-    &__titel {
-        margin-bottom: 20px;
+    &__logo-img {
+        padding-bottom: 20px;
     }
 
     &__logo-text {
         color: $darkShade75;
         max-width: 260px;
     }
+
+    &__titel {
+        margin-bottom: 20px;
+    }
+
 
     &__nav-item {
         list-style: none;
@@ -190,12 +196,12 @@
     }
 
 }
-.footer__logo{
-    .logo__img{
-        padding-bottom: 20px;
-    }
+.footer__line{
+    width: 100vw;
+    height: 1px;
+    background-color: $darkShade75;
+    
 }
-
 .footer__subscript {
     &-text {
         padding-bottom: 20px;
@@ -210,6 +216,9 @@
     height: 70px;
     align-items: center;
 }
+
+
+ 
 
 .copyright {
     color: $darkShade75;
@@ -238,6 +247,7 @@
     padding: 15px;
     border: 1px solid $darkShade25;
     border-radius: 4px;
+
     &::placeholder {
         color: $darkShade25;
     }

@@ -267,13 +267,17 @@ body {
   padding-top: 105px;
 }
 
-.footer__titel {
-  margin-bottom: 20px;
+.footer__logo-img {
+  padding-bottom: 20px;
 }
 
 .footer__logo-text {
   color: rgba(31, 32, 65, 0.75);
   max-width: 260px;
+}
+
+.footer__titel {
+  margin-bottom: 20px;
 }
 
 .footer__nav-item {
@@ -286,8 +290,10 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.footer__logo .logo__img {
-  padding-bottom: 20px;
+.footer__line {
+  width: 100vw;
+  height: 1px;
+  background-color: rgba(31, 32, 65, 0.75);
 }
 
 .footer__subscript-text {
