@@ -286,6 +286,10 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
+.footer__logo .logo__img {
+  padding-bottom: 20px;
+}
+
 .footer__subscript-text {
   padding-bottom: 20px;
   color: rgba(31, 32, 65, 0.75);
