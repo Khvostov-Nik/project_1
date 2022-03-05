@@ -50,6 +50,11 @@ select {
   font: inherit;
 }
 
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -126,29 +131,32 @@ body {
   margin-top: 13px;
 }
 
-.menu .item {
-  list-style: none;
-  cursor: pointer;
-  margin-left: 25px;
+.menu__link {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.menu .item.active {
+.menu__link.active {
   font-weight: bold;
   color: rgba(31, 32, 65, 0.75);
 }
 
-.menu .item.akardion {
+.menu__item {
+  list-style: none;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.akardion {
   background-image: url(./../img/akardion.svg);
   background-repeat: no-repeat;
 }
 
-.menu .item.akardion.first {
+.akardion-first {
   padding-right: 20px;
   background-position: 50px 8px;
 }
 
-.menu .item.akardion.second {
+.akardion-second {
   padding-right: 40px;
   background-position: 90px 8px;
 }
@@ -278,46 +286,8 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.footer .footer__subscript-text {
+.footer__subscript-text {
   padding-bottom: 20px;
-}
-
-.footer .footer__subscript .input {
-  position: absolute;
-}
-
-.footer .footer__subscript-input {
-  height: 44px;
-  width: 260px;
-  padding: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-}
-
-.footer .footer__subscript-input::-webkit-input-placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.footer .footer__subscript-input:-ms-input-placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.footer .footer__subscript-input::-ms-input-placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.footer .footer__subscript-input::placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.footer .footer__subscript .arrow-input {
-  display: block;
-  position: absolute;
-  top: 12px;
-  left: 235px;
-}
-
-.footer .footer__subscript-text {
   color: rgba(31, 32, 65, 0.75);
   max-width: 260px;
 }
@@ -352,5 +322,40 @@ body {
 .social__link + .social__link {
   margin-left: 24px;
   height: 24px;
+}
+
+.input {
+  position: relative;
+}
+
+.subscript-email {
+  height: 44px;
+  width: 260px;
+  padding: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.subscript-email::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.subscript-email:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.subscript-email::-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.subscript-email::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.arrow-input {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 235px;
 }
 /*# sourceMappingURL=style.css.map */
