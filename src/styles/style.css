@@ -366,4 +366,77 @@ body {
   top: 12px;
   left: 235px;
 }
+
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 380px;
+  padding: 40px 30px 30px 30px;
+}
+
+.titel-card {
+  margin-bottom: 15px;
+}
+
+.registration-input,
+.date {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.registration-input::-webkit-input-placeholder,
+.date::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.registration-input:-ms-input-placeholder,
+.date:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.registration-input::-ms-input-placeholder,
+.date::-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.registration-input::placeholder,
+.date::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.birth,
+.log-pass {
+  margin-top: 15px;
+}
+
+.togle {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
 /*# sourceMappingURL=style.css.map */
