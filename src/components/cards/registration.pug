@@ -1,5 +1,6 @@
 include ../inputs/radio.pug
 include ../inputs/text-input.pug
+include ../inputs/toggle.pug
 
 .registration
     h2.titel-card Регистрация аккаунта
@@ -13,9 +14,8 @@ include ../inputs/text-input.pug
     h3.log-pass Данные для входа в сервис
     +text-input("email","email","email")
     +text-input("password","password","password")
-    .togle
-        input(type="checkbox", name="togle" id="togle")
-        label(for="togle") Получать спецпредложения
+    .toggle
+        +toggle("Получать спецпредложения")
     a.btn__praim-large.btn__praim-large-arrow Перейти к оплате
         img(src="./img/arrow.svg", alt="").arrow__btn
     div.enter 

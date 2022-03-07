@@ -417,9 +417,61 @@ body {
   margin-top: 15px;
 }
 
-.togle {
+.toggle {
+  --width: 40px;
+  --height: calc(var(--width) / 2);
+  --border-radius: calc(var(--height) / 2);
   margin-top: 5px;
   margin-bottom: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.text-toggle {
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.toggle__input {
+  display: none;
+}
+
+.toggle__fill {
+  position: relative;
+  min-width: 40px;
+  height: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.toggle__input:checked ~ .toggle__fill {
+  border: 1px solid #bc9cff;
+}
+
+.toggle__fill::after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  top: 3px;
+  left: 3px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: var(--border-radius);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.toggle__input:checked ~ .toggle__fill::after {
+  -webkit-transform: translateX(var(--height));
+          transform: translateX(var(--height));
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
 }
 
 .enter {
