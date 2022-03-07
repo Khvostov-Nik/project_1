@@ -1,17 +1,18 @@
+include ../inputs/radio.pug
+include ../inputs/text-input.pug
+
 .registration
     h2.titel-card Регистрация аккаунта
-    input.registration-input(type="text" placeholder="Имя")
-    input.registration-input(type="text" placeholder="Фамилия")
+    +text-input("text","first name","Имя")
+    +text-input("text","last name","Фамилия")
     .sex 
-        include ../inputs/radio.pug
-            |Мужской
-        include ../inputs/radio.pug 
-            |Женский
+        +radio("Мужской","sex")
+        +radio("Женский","sex")
     h3.birth Дата рождения
-    input.registration-input(type="text", name="date of birth", placeholder="ДД.ММ.ГГГГ")
+    +text-input("text","date of birth","ДД.ММ.ГГГГ")
     h3.log-pass Данные для входа в сервис
-    input.registration-input(type="email", name="email", placeholder="email")
-    input.registration-input(type="password", name="password",placeholder="password")
+    +text-input("email","email","email")
+    +text-input("password","password","password")
     .togle
         input(type="checkbox", name="togle" id="togle")
         label(for="togle") Получать спецпредложения

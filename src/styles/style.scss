@@ -266,8 +266,7 @@
 .titel-card{
     margin-bottom: 15px;
 }
-.registration-input,
-.date {
+.text-input{
     margin-top: 5px;
     margin-bottom: 5px;
     padding-left:15px;
@@ -304,7 +303,7 @@
 .radio-input{
     display: none;
 }
-.text{
+.text-radio{
     position: relative;
     padding-left: 30px;
     &::before{
@@ -333,6 +332,6 @@
     
     
 }
-.radio-input:checked + .text::after{
+.radio-input:checked + .text-radio::after{
     opacity: 1;
 }

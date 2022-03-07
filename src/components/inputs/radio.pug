@@ -1,4 +1,6 @@
-label.label
-    input.radio-input(type="radio", name="radio")
-    span.text
+mixin radio(text,name)
+    label.label
+        input.radio-input(type= "radio", name= name)
+        span.text-radio= text
+    
     
