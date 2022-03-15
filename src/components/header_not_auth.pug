@@ -1,3 +1,6 @@
+include ./inputs/btn__praim-small.pug
+include ./inputs/btn__praim-large.pug
+
 .container
     header.header 
         .header__inner
@@ -14,5 +17,5 @@
                             a.menu__link(href="#") Новости
                         li.menu__item.akardion-second.akardion
                             a.menu__link(href="#") Соглашения
-                    a.btn__praim-small.btn__praim-small-notbg(href="#") войти
-                    a.btn__praim-large(href="#") зарегистрироваться
+                    +btn__praim-small("#","войти","notbg")
+                    +btn__praim-large("#","зарегестрироваться")

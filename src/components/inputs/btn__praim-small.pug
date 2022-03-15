@@ -1,0 +1,12 @@
+mixin btn__praim-small(href,text,bg,disabled)
+    if bg!= "notbg"
+        if disabled==="disabled"
+            a.btn__praim-small.disabled(href= href)&attributes(attributes)= text
+        else
+            a.btn__praim-small(href= href)&attributes(attributes)= text
+    else 
+        if disabled==="disabled"
+            a.btn__praim-small.btn__praim-small-notbg.disabled(href= href)&attributes(attributes)= text
+        else
+            a.btn__praim-small.btn__praim-small-notbg(href= href)&attributes(attributes)= text
+        

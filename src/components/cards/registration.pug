@@ -1,7 +1,8 @@
 include ../inputs/radio.pug
 include ../inputs/text-input.pug
 include ../inputs/toggle.pug
-
+include ../inputs/btn__praim-large.pug
+include ../inputs/btn__praim-small.pug
 .registration
     h2.titel-card Регистрация аккаунта
     +text-input("text","first name","Имя")
@@ -16,8 +17,7 @@ include ../inputs/toggle.pug
     +text-input("password","password","password")
     .toggle
         +toggle("Получать спецпредложения")
-    a.btn__praim-large.btn__praim-large-arrow Перейти к оплате
-        img(src="./img/arrow.svg", alt="").arrow__btn
+    +btn__praim-large("#","Перейти к оплате","arrow")
     div.enter 
         p Уже есть аккаунт на Toxin
-        a.btn__praim-small-notbg.btn__praim-small Войти
+        +btn__praim-small("#","войти","notbg")

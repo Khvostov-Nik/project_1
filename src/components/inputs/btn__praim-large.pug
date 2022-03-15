@@ -1,0 +1,6 @@
+mixin btn__praim-large(href,text,arrow)
+    if arrow==="arrow"
+        a.btn__praim-large.btn__praim-large-arrow(href= href)&attributes(attributes)= text
+            img.arrow__btn(src="./img/arrow.svg" alt="arrow")
+    else 
+        a.btn__praim-large(href= href)&attributes(attributes)= text
