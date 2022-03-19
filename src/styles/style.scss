@@ -355,15 +355,16 @@
 .text-radio{
     position: relative;
     padding-left: 30px;
+    color: $darkShade50;
     &::before{
         content: "";
         display: block;
         position: absolute;
         width: 20px;
         height: 20px;
-        border: 1px solid $purple;
+        border: 1px solid $darkShade25;
         border-radius: 50%;
-        top: -1px;
+        top: 0;
         left: 0;
     }
     &::after{
@@ -374,7 +375,7 @@
         height: 12px;
         background: $gradientFirst;
         border-radius: 50%;
-        top: 3px;
+        top: 4px;
         left: 4px;
         opacity: 0;
     }
@@ -383,4 +384,50 @@
 }
 .radio-input:checked + .text-radio::after{
     opacity: 1;
+}
+.radio-input:checked + .text-radio::before{
+    border: 1px solid $purple;
+}
+.radio-input:checked + .text-radio{
+    color: $darkShade75;
+}
+
+
+.checkbox-input{
+    display: none;
+}
+.text-checkbox{
+    position: relative;
+    padding-left: 30px;
+    color: $darkShade50;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $darkShade25;
+        border-radius: 4px;
+        top: 0;
+        left: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 5px;
+        left: 7px;
+        width: 6px;
+        height: 8px;
+        border: solid  $purple;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+}
+.checkbox-input:checked + .text-checkbox::after{
+    opacity: 1;
+}
+.checkbox-input:checked + .text-checkbox::before{
+    border: 1px solid $purple;
 }
