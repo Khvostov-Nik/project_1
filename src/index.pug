@@ -1,4 +1,4 @@
-include ./components/inputs/checkbox.pug
+include ./components/button/btn__like.pug
 
 doctype html
 html(lang="en")
@@ -15,6 +15,7 @@ html(lang="en")
         .wrapper
             .main
                 .container
-                    +checkbox("текст чекбокса","checkbox")
+                    +like("12","active")
+                    +like("2")
                   
         include components/footer.pug

@@ -1,0 +1,9 @@
+mixin like(count,active)
+    if active!= "active"
+        .like__btn
+            .like__btn-icon
+            .like__btn-count&attributes(attributes)= count
+    else 
+        .like__btn.active
+            .like__btn-icon
+            .like__btn-count&attributes(attributes)= count

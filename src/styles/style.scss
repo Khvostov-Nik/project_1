@@ -400,6 +400,8 @@
     position: relative;
     padding-left: 30px;
     color: $darkShade50;
+    display: block;
+    max-width: 222px;
     &::before{
         content: "";
         display: block;
@@ -416,12 +418,10 @@
         position: absolute;
         display: block;
         top: 5px;
-        left: 7px;
-        width: 6px;
+        left: 5px;
+        width: 10px;
         height: 8px;
-        border: solid  $purple;
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
+        background-image: url(./../img/checkbox.svg);
         opacity: 0;
     }
 }
@@ -430,4 +430,41 @@
 }
 .checkbox-input:checked + .text-checkbox::before{
     border: 1px solid $purple;
+}
+
+.like__btn{
+    display: flex;
+    width: 40px;
+    height: 20px;
+    border: 1px solid $darkShade25;
+    border-radius: 10px;
+    &-icon{
+        width: 20px;
+        height: 20px;
+        background-position: 5px 5px;
+        background-image: url(./../img/heart-not-bg.svg);
+        background-repeat: no-repeat;
+    }
+    &-count{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        padding-top: 3px;
+        padding-bottom: 4px;
+        padding-right: 10px;
+        padding-left: 3px;
+        line-height: 12px;
+        color:$darkShade25;
+    }
+   
+}
+.like__btn.active{ 
+    border: 1px solid $purple;
+    border-radius: 10px;
+    .like__btn-icon{
+        background-image: url(./../img/heart.svg);
+    }
+    .like__btn-count{
+        color:$purple;
+    }
 }
