@@ -434,16 +434,21 @@
 
 .like__btn{
     display: flex;
+    position: relative;
     width: 40px;
     height: 20px;
     border: 1px solid $darkShade25;
     border-radius: 10px;
+    cursor: pointer;
     &-icon{
-        width: 20px;
-        height: 20px;
-        background-position: 5px 5px;
-        background-image: url(./../img/heart-not-bg.svg);
-        background-repeat: no-repeat;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 4px;
+        left: 5px;
+        // background-position: 5px 5px;
+        // background-image: url(./../img/heart-not-bg.svg);
+        // background-repeat: no-repeat;
     }
     &-count{
         width: 20px;
@@ -452,7 +457,7 @@
         padding-top: 3px;
         padding-bottom: 4px;
         padding-right: 10px;
-        padding-left: 3px;
+        padding-left: 22px;
         line-height: 12px;
         color:$darkShade25;
     }
@@ -461,9 +466,6 @@
 .like__btn.active{ 
     border: 1px solid $purple;
     border-radius: 10px;
-    .like__btn-icon{
-        background-image: url(./../img/heart.svg);
-    }
     .like__btn-count{
         color:$purple;
     }
