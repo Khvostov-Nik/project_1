@@ -1,2 +1,7 @@
-mixin text-input(type,name,placeholder)
-    input.text-input(type= type, name= name, placeholder= placeholder)
+mixin text-input(type,name,placeholder,arrow)
+    if arrow!= "arrow"
+        input.text-input(type= type, name= name, placeholder= placeholder)
+    else
+        .input
+            input.subscript-email(type= type, name= name, placeholder= placeholder)
+            .arrow-input._materialarrow_input

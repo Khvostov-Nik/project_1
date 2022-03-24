@@ -1,4 +1,5 @@
-include ./components/button/btn__like.pug
+include ./components/button/rate__button.pug
+include ./components/inputs/text-input.pug
 
 doctype html
 html(lang="en")
@@ -7,15 +8,15 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
+        link(rel="stylesheet", href="styles/material.css")
         link(rel="stylesheet", href="styles/style.css")
         
     body 
         //- include components/header_not_auth.pug
-        include components/header_auth.pug
+        include components/header_not_auth.pug
         .wrapper
             .main
                 .container
-                    +like("52","active")
-                    +like("4")
-                  
+                    +text-input("email","email","email","arrow")
+                    +text-input("text","name","text")
         include components/footer.pug

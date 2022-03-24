@@ -154,12 +154,11 @@
 .arrow {
     width: 25px;
     padding-top: 3px;
-
     &__btn {
         position: absolute;
-        top: 5px;
+        top: 10px;
         left: 280px;
-        width: 32px;
+        font-size: 24px;
     }
 }
 
@@ -183,6 +182,7 @@
 
     &__titel {
         margin-bottom: 20px;
+        font-weight: bold;
     }
 
 
@@ -255,8 +255,13 @@
 .arrow-input {
     display: block;
     position: absolute;
-    top: 12px;
-    left: 235px;
+    top: 11px;
+    left: 230px;
+    font-size: 22px;
+    background:$gradientFirst;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .registration{
