@@ -9,8 +9,8 @@
   font-display: block;
 }
 
-[class^="_material"],
-[class*=" _material"] {
+[class^="_material"]::before,
+[class*=" _material"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Material-Icons' !important;
   speak: never;
@@ -28,10 +28,7 @@
 ._materialakardion:before {
   content: "\e900";
 }
-._materialarrow:before {
-  content: "\e901";
-  color: #fff;
-}
+
 ._materialarrow_input:before {
   content: "\e902";
 }
