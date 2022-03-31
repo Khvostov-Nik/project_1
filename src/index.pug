@@ -1,5 +1,5 @@
 include ./components/button/rate__button.pug
-include ./components/inputs/text-input.pug
+
 
 doctype html
 html(lang="en")
@@ -12,11 +12,10 @@ html(lang="en")
         link(rel="stylesheet", href="styles/style.css")
         
     body 
-        //- include components/header_not_auth.pug
+        //- include components/header_auth.pug
         include components/header_not_auth.pug
         .wrapper
             .main
                 .container
-                    +text-input("email","email","email","arrow")
-                    +text-input("text","name","text")
+                    +rate__button("2")
         include components/footer.pug

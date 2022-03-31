@@ -46,20 +46,29 @@
     }
 }
 
-.akardion {
-    background-image: url(./../img/akardion.svg);
-    background-repeat: no-repeat;
-}
 
 .akardion-first {
+    position: relative;
     padding-right: 20px;
-    background-position: 50px 8px;
+    ._materialakardion{
+        position: absolute;
+        font-size: 10px;
+        color:$darkShade50 ;
+        top: 4px;
+        left: 65px;
+    }
 }
 
 .akardion-second {
-    padding-right: 40px;
-    background-position: 90px 8px;
-
+    position: relative;
+    padding-right: 20px;
+    ._materialakardion{
+        position: absolute;
+        font-size: 10px;
+        color:$darkShade50 ;
+        top: 4px;
+        left: 110px;
+    }
 }
 
 .auth {
@@ -451,9 +460,6 @@
         height: 10px;
         top: 4px;
         left: 5px;
-        // background-position: 5px 5px;
-        // background-image: url(./../img/heart-not-bg.svg);
-        // background-repeat: no-repeat;
     }
     &-count{
         width: 20px;
@@ -474,4 +480,25 @@
     .like__btn-count{
         color:$purple;
     }
+}
+
+.rate{
+    display: flex;
+    cursor: pointer;
+}
+._materialstar{
+    font-size: 24px;
+    line-height: 20px;
+    background:$gradientFirst;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+._materialstar_not_bg{
+    font-size: 24px;
+    line-height: 20px;
+    background:$gradientFirst;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

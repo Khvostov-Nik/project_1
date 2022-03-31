@@ -1,0 +1,44 @@
+mixin rate__button(rate)
+    case rate
+        when "0": .rate
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+        when "1": .rate
+                    ._materialstar
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+        when "2": .rate
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+        when "3": .rate
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+        when "4": .rate
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar_not_bg
+        when "5": .rate
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar
+                    ._materialstar
+        default: .rate
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg
+                    ._materialstar_not_bg

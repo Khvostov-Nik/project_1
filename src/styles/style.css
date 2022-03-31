@@ -154,19 +154,30 @@ body {
   margin-left: 25px;
 }
 
-.akardion {
-  background-image: url(./../img/akardion.svg);
-  background-repeat: no-repeat;
+.akardion-first {
+  position: relative;
+  padding-right: 20px;
 }
 
-.akardion-first {
-  padding-right: 20px;
-  background-position: 50px 8px;
+.akardion-first ._materialakardion {
+  position: absolute;
+  font-size: 10px;
+  color: rgba(31, 32, 65, 0.5);
+  top: 4px;
+  left: 65px;
 }
 
 .akardion-second {
-  padding-right: 40px;
-  background-position: 90px 8px;
+  position: relative;
+  padding-right: 20px;
+}
+
+.akardion-second ._materialakardion {
+  position: absolute;
+  font-size: 10px;
+  color: rgba(31, 32, 65, 0.5);
+  top: 4px;
+  left: 110px;
 }
 
 .auth {
@@ -644,5 +655,32 @@ body {
 
 .like__btn.active .like__btn-count {
   color: #bc9cff;
+}
+
+.rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+._materialstar {
+  font-size: 24px;
+  line-height: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+._materialstar_not_bg {
+  font-size: 24px;
+  line-height: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
