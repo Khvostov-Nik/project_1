@@ -1,0 +1,9 @@
+include ./../inputs/text-input.pug
+include ../button/btn__praim-large.pug
+mixin enter_card
+    .enter
+        h2 Войти
+        +text-input("email","email","email")
+        +text-input("password","password","password")
+        +btn__praim-large("#","войти","arrow")
+

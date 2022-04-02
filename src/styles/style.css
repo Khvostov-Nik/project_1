@@ -683,4 +683,22 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 358px;
+  max-height: 380px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.enter .text-input {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

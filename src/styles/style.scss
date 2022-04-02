@@ -502,3 +502,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.enter{
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    max-height: 380px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .text-input{
+        width: 100%;
+    }
+}
