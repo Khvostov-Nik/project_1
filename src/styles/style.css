@@ -401,6 +401,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #fff;
+  border-radius: 4px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -410,6 +412,8 @@ body {
           justify-content: center;
   max-width: 380px;
   padding: 40px 30px 30px 30px;
+  -webkit-box-shadow: 0 0 10px rgba(31, 32, 65, 0.5);
+          box-shadow: 0 0 10px rgba(31, 32, 65, 0.5);
 }
 
 .titel-card {
@@ -504,7 +508,7 @@ body {
   background: linear-gradient(180deg, #bc9cff, #8ba4f9);
 }
 
-.enter {
+.enter_registr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +688,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.enter {
+.enter_card {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,13 +697,40 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 358px;
-  max-height: 380px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 380px;
+  height: 358px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 10px rgba(31, 32, 65, 0.25);
+          box-shadow: 0 0 10px rgba(31, 32, 65, 0.25);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 30px 32px 30px;
 }
 
-.enter .text-input {
-  width: 100%;
+.enter_card-titel {
+  margin-bottom: 20px;
+}
+
+.enter_card .btn__praim-large {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.enter_card .text-input {
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.wrapbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

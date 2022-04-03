@@ -1,9 +1,13 @@
 include ./../inputs/text-input.pug
 include ../button/btn__praim-large.pug
+include ../button/btn__praim-small.pug
 mixin enter_card
-    .enter
-        h2 Войти
+    .enter_card
+        h2.enter-titel Войти
         +text-input("email","email","email")
         +text-input("password","password","password")
         +btn__praim-large("#","войти","arrow")
+        .wrapbtn 
+            p Нет аккаунта на Toxin 
+            +btn__praim-small("#","создать","notbg")
 
